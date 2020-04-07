@@ -13,3 +13,53 @@
  *= require_tree .
  *= require_self
  */
+
+ html{
+   background-color: #fffff0;
+ }
+
+ .header-name{
+   font-style: italic;
+   font-family: 'Lucida Grande' ;
+ }
+
+ .dimterest-header {
+   font-size: 40px;
+   font-style: italic;
+   font-family: 'Black Ops One';
+   color: black;
+   text-decoration: underline;
+   text-decoration-color: #ab4b52 ;
+   
+ }
+ 
+ .login-form-container, .login-signup, .dimterest-header {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .login-form-box{
+   align-items: center;
+   border: 2px solid black;
+   border-radius: 15px;
+   padding: 40px;
+   padding-top: 15px;
+   background-color:#ab4b52 ;
+   color: #fffff0;
+ }
+ 
+ .login-form-container h4{
+    padding-left: 100px;
+   font-family: 'Nova Cut';
+   font-weight: lighter;
+   font-style: italic;
+ }
+ .login-form-container h2{
+   font-family: 'Black Ops One';
+   font-weight: lighter;
+   font-style: italic;
+ }
+
+.login-nav {
+}
