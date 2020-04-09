@@ -23,21 +23,30 @@ class SignupForm extends React.Component {
       .then(() => this.props.history.push('/'));
   }
 
+  // renderErrors() {
+  //   return (
+  //     <ul>
+  //       {this.props.errors.map((error, i) => (
+  //         <li key={`error-${i}`}>
+  //           {error}
+  //         </li>
+  //       ))}
+  //     </ul>
+  //   );
+  // }
+
 
   render() {
     return (
       <div className="signup-form-container">
-
-
+        {/* <div className='login-nav'>{this.props.navLink}</div> */}
         <form onSubmit={this.handleSubmit} className="signup-form-box">
-          <header>
             <Link to="/" className="header-link">
-              <h1 className="dimterest-header">dimterest</h1>
+              <h1 className="dimterest-header">d</h1>
             </Link>
-            {/* <GreetingContainer /> */}
-          </header>
-          <h2>welcome to dimterest</h2>
-          <h4>issa vibe</h4>
+          <div className='form-titles'>
+            <h2>Welcome to Dimterest</h2>
+          </div>
           <div className="signup-form">
             <br />
               <input 
@@ -64,7 +73,11 @@ class SignupForm extends React.Component {
                 className="signup-input"
               />
             <br />
-            <input className="session-submit" type="submit" value="continue" />
+            <input className="session-submit" type="submit" value="Continue" />
+          </div>
+          <div className='signup-guider'>
+            Already a member?
+              <p className='blue-sign'>{this.props.navLink}</p>
           </div>
         </form>
       </div>

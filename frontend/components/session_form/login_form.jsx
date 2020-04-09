@@ -52,14 +52,12 @@ class LoginForm extends React.Component {
       <div className="login-form-container">
         {/* <div className='login-nav'>{this.props.navLink}</div> */}
         <form onSubmit={this.handleSubmit} className="login-form-box">
-          <header>
             <Link to="/" className="header-link">
-              <h1 className="dimterest-header">dimterest</h1>
+              <h1 className="dimterest-header">d</h1>
             </Link>
-          </header>
-          <h2>welcome to dimterest</h2>
-          <h4>issa vibe</h4>
-          {/* <p className='login-formNav'>{this.props.formType}</p> */}
+          <div className='form-titles'>
+            <h2>Welcome to Dimterest</h2>
+          </div>
           {/* {this.renderErrors()} */}
           <div className="login-form">
             <br />
@@ -77,9 +75,13 @@ class LoginForm extends React.Component {
               placeholder='Password'
             />
             <br />
-            <input className="session-submit" type="submit" value="continue" />
+            <input className="session-submit" type="submit" value="Log In" />
           </div>
-            <button className='session-submit' onClick={this.handleClick}>demo user</button>
+            <button className='demo-user' onClick={this.handleClick}>Demo User</button>
+            <div className='signup-guider'>
+              Not on Dimterest yet? 
+              <p className='blue-sign'>{this.props.navLink}</p>
+            </div>
         </form>
       </div>
     );

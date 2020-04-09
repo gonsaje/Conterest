@@ -15,19 +15,44 @@
  */
 
  html{
-   background-color: white;
+   background-color: lightgrey;
  }
 
- 
+ .form-titles {
+   padding:none;
+   display:flex;
+   justify-content: center;
+   text-align: center;
+   flex-direction: column;
+   font-family: 'Cabin' ;
+ }
 
- .dimterest-header {
+ .form-titles h2 {
+    font-size: 40px;
+ }
+ .form-titles p {
+    font-size: 20px;
+    font-style: italic;
+ }
+
+ .header-link {
+   text-decoration: none;
+   text-align: center;
+  }
+  
+  
+  .dimterest-header {
+    text-align: center;
+    padding: 2px;
    padding: 0;
+   background-color: #ab4b52;
+   height: 50px;
+   width:50px;
+   border-radius: 50px;
    font-size: 40px;
    font-style: italic;
    font-family: 'Black Ops One';
-   color: black;
-   text-decoration: underline;
-   text-decoration-color: #ab4b52 ;
+   color: #fffff0;
    
  }
  
@@ -37,56 +62,55 @@
    align-items: center;
  }
 
+ .signup-form-container ,.login-form-container {
+   margin-top: 200px;
+ }
+ .session-links{
+   margin-top: 200px;
+ }
+
  .signup-form-box, .login-form-box{
    display: flex;
    flex-direction: column;
    align-items: center;
-   border-style: outset;
    border-radius: 15px;
    padding: 40px;
    padding-top: 15px;
    background-color: #fffff0;
  }
  
- .signup-form-container h4, .login-form-container h4{
-   font-family: 'Barlow Condensed';
-   font-weight: lighter;
-   font-style: italic;
- }
- .login-form-container h2{
-   font-family: 'Black Ops One';
-   font-weight: lighter;
-   font-style: italic;
- }
+ 
 
-  .signup-form-container h2{
-   font-family: 'Black Ops One';
-   font-weight: lighter;
-   font-style: italic;
+  .signup-form-container h2, .login-form-container h2{
+   font-family: 'Cabin';
  }
 
 .signup-input, .login-input{
-  border-radius: 20px;
-  width: 200px;
-  height: 20px;
-  font-family: 'Barlow Condensed';
+  border-radius: 15px;
+  width: 390px;
+  height: 35px;
+  font-family: 'Cabin';
   color: #ab4b52;
   font-size: 15px;
   padding: 5px;
   font-weight: lighter;
+  border-style: none;
+  border: 2px solid #e1e1d2;
 }
 
-.session-submit{
+.session-submit, .demo-user{
   background-color: #ab4b52;
-  border-radius: 20px;
+  border-radius: 8px;
   height: 40px;
-  width: 150px;
-  font-family: 'Barlow Condensed';
+  width: 390px;
+  font-family: 'Cabin';
   color: #fffff0;
-  border-style: outset;
   font-size: 17px;
 }
 
+.demo-user{
+  margin-top: 10px;
+}
 .login-form, .signup-form{
   display:flex;
   flex-direction: column;
@@ -110,40 +134,44 @@
   padding:20px;
   align-items: center;
   border-radius: 15px;
-  border-style: outset;
+
   background-color: #fffff0;
 }
 
-
-/* .login-signup{
-  background-color: #ab4b52;
-  border-radius: 25px;
-  border-style: outset;
-  height: 40px;
-  width: 150px;
-  font-family: 'Barlow Condensed';
-  font-size: 17px;
-  text-align: center;
-  color: #fffff0;
-} */
 
 .greet-login{
   text-align: center;
   text-decoration: none;
   background-color: #ab4b52;
   border-radius: 25px;
-  border-style: outset;
-  padding: 10px;
-  width: 150px;
-  font-family: 'Barlow Condensed';
+  padding: 15px;
+  width: 390px;
+  font-family: 'Cabin';
   font-size: 17px;
   text-align: center;
   color: #fffff0;
 }
 
+.greet-signup{
+  margin-top: 10px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #e2e2d4;
+  border-radius: 25px;
+  padding: 15px;
+  width: 390px;
+  font-family: 'Cabin';
+  font-size: 17px;
+  text-align: center;
+  color: black;
+  margin-bottom: 10px;
+}
 
+.greet-signup:hover{
+  background-color: #cdcdbe;
+}
 
-.session-submit:hover, .login-signup:hover, .greet-login:hover{
+.session-submit:hover, .greet-login:hover, .demo-user:hover{
   background-color: #793338;
   color: #d3d3c8;
 }
@@ -168,3 +196,22 @@
   flex-direction: row;
 }
 
+.login-nav{
+  float:left;
+}
+
+.signup-guider {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-family: 'Cabin';
+}
+
+.blue-sign a{
+    color: #ab4b52;
+    margin-left: 2px;
+  }
+
+.header-nav-link{
+  text-decoration: none;
+}
