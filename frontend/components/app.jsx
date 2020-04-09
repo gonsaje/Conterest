@@ -19,7 +19,7 @@ import { AuthRoute, ProtectedRoute } from '../util/route_util';
 
 const App = () => (
   <div>
-    <Route path="/" component={NavBarContainer} />
+    <Route exact path="/" component={NavBarContainer} />
     <header>
       <Link to="/" className="header-link">
         <h1 className="dimterest-header">dimterest</h1>

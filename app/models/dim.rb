@@ -1,3 +1,0 @@
-class Dim < ApplicationRecord
-  
-end
