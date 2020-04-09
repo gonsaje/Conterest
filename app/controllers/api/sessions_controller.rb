@@ -1,12 +1,14 @@
 class Api::SessionsController < ApplicationController
+  protect_from_forgery with: :null_session
+  before_action :ensure_logged_out, only: [:create]
 
   def create 
     @user = User.find_by_credentials(params[:user][:email], params[:user][:password])
     if @user.nil?
-      render json: ['Imposter...Wrong Credentials!!'], status: 401
+      render json: {message: 'Imposter...Wrong Credentials!!'}, status: 401
     else
       login!(@user)
-      render 'api/users/_show.json.jbuilder';
+      render json: {message: "i rendered"}
     end
   end
 

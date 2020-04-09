@@ -4,14 +4,15 @@ class Api::UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save 
       login!(@user)
-      render json: {message: "successfully signed up"}
+      render :show
     else
-      render json: @user.error.full_messages, status: 401
+      render json: {message: 'error creating user'}, status: 401
     end
   end
 
   def show
     @user = User.find(params[:id])
+    render :show
   end
 
 
