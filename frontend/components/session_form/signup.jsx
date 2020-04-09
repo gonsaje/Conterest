@@ -10,6 +10,7 @@ class SignupForm extends React.Component {
       age:''
     };
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.renderErrors = this.renderErrors.bind(this);
   }
 
   update(type) {
@@ -23,17 +24,17 @@ class SignupForm extends React.Component {
       .then(() => this.props.history.push('/'));
   }
 
-  // renderErrors() {
-  //   return (
-  //     <ul>
-  //       {this.props.errors.map((error, i) => (
-  //         <li key={`error-${i}`}>
-  //           {error}
-  //         </li>
-  //       ))}
-  //     </ul>
-  //   );
-  // }
+  renderErrors() {
+    return (
+      <ul className='error-ul'>
+        {this.props.errors.map((error, i) => (
+          <li key={`error-${i}`} className='error-li'>
+            {error}
+          </li>
+        ))}
+      </ul>
+    );
+  }
 
 
   render() {
@@ -47,11 +48,12 @@ class SignupForm extends React.Component {
           <div className='form-titles'>
             <h2>Welcome to Dimterest</h2>
           </div>
+          {this.renderErrors()}
           <div className="signup-form">
             <br />
               <input 
                 placeholder='Email'
-                type="text"
+                type="email"
                 value={this.state.email}
                 onChange={this.update('email')}
                 className="signup-input"

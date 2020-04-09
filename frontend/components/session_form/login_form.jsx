@@ -10,6 +10,7 @@ class LoginForm extends React.Component {
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleClick = this.handleClick.bind(this);
+    this.renderErrors = this.renderErrors.bind(this);
   }
 
 
@@ -35,17 +36,17 @@ class LoginForm extends React.Component {
 
  
 
-  // renderErrors() {
-  //   return (
-  //     <ul>
-  //       {this.props.errors.map((error, i) => (
-  //         <li key={`error-${i}`}>
-  //           {error}
-  //         </li>
-  //       ))}
-  //     </ul>
-  //   );
-  // }
+  renderErrors() {
+    return (
+      <ul className='error-ul'>
+        {this.props.errors.map((error, i) => (
+          <li key={`error-${i}`} className='error-li'>
+            {error}
+          </li>
+        ))}
+      </ul>
+    );
+  }
 
   render() {
     return (
@@ -55,13 +56,13 @@ class LoginForm extends React.Component {
             <Link to="/" className="header-link">
               <h1 className="dimterest-header">d</h1>
             </Link>
-          <div className='form-titles'>
+            <div className='form-titles'>
             <h2>Welcome to Dimterest</h2>
-          </div>
-          {/* {this.renderErrors()} */}
-          <div className="login-form">
+            </div>
+            {this.renderErrors()}
+            <div className="login-form">
             <br />
-            <input type="text"
+            <input type="email"
               value={this.state.email}
               onChange={this.update('email')}
               className="login-input"
@@ -76,7 +77,7 @@ class LoginForm extends React.Component {
             />
             <br />
             <input className="session-submit" type="submit" value="Log In" />
-          </div>
+            </div>
             <button className='demo-user' onClick={this.handleClick}>Demo User</button>
             <div className='signup-guider'>
               Not on Dimterest yet? 
