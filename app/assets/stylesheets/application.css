@@ -153,8 +153,14 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  width: 100%;
   border-bottom: 2px solid darkgrey;
   background-color: #fffff0;
+}
+.nav-bar{
+  background-color: #fffff0;
+  width: 100%;
+  padding-left: 5px;
 }
 
 .menu{

@@ -9,7 +9,9 @@ class LoginForm extends React.Component {
       password: '',
     };
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
+
 
   update(type) {
     return e => this.setState({
@@ -23,6 +25,15 @@ class LoginForm extends React.Component {
     this.props.login(user)
       .then(() => this.props.history.push('/'));
   }
+
+  handleClick(e) {
+    e.preventDefault();
+    const user = Object.assign({}, {email:'demo@email.com', password:'password'});
+    this.props.login(user)
+      .then(() => this.props.history.push('/'));
+  }
+
+ 
 
   // renderErrors() {
   //   return (
@@ -68,6 +79,7 @@ class LoginForm extends React.Component {
             <br />
             <input className="session-submit" type="submit" value="continue" />
           </div>
+            <button className='session-submit' onClick={this.handleClick}>demo user</button>
         </form>
       </div>
     );

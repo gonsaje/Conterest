@@ -6,7 +6,7 @@ class Api::UsersController < ApplicationController
       login!(@user)
       render :show
     else
-      render json: {message: 'error creating user'}, status: 401
+      render json: {message: 'You Are Missing Something'}, status: 401
     end
   end
 
