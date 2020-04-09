@@ -20,13 +20,9 @@ import { AuthRoute, ProtectedRoute } from '../util/route_util';
 const App = () => (
   <div>
     <Route exact path="/" component={NavBarContainer} />
-    <header>
-      <Link to="/" className="header-link">
-        <h1 className="dimterest-header">dimterest</h1>
-      </Link>
-      <GreetingContainer />
-    </header>
+    
     <Switch>
+      <AuthRoute exact path='/'component={GreetingContainer}/>
       <AuthRoute exact path="/login" component={LogInFormContainer} />
       <AuthRoute exact path="/signup" component={SignUpFormContainer} />
     </Switch>

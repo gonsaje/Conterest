@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class SignupForm extends React.Component {
   constructor(props) {
@@ -29,6 +30,12 @@ class SignupForm extends React.Component {
 
 
         <form onSubmit={this.handleSubmit} className="signup-form-box">
+          <header>
+            <Link to="/" className="header-link">
+              <h1 className="dimterest-header">dimterest</h1>
+            </Link>
+            {/* <GreetingContainer /> */}
+          </header>
           <h2>welcome to dimterest</h2>
           <h4>issa vibe</h4>
           <div className="signup-form">

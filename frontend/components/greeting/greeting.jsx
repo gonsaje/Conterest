@@ -6,13 +6,18 @@ import { Link } from 'react-router-dom';
 const Greeting = ({ currentUser, logout }) => {
   const sessionLinks = () => (
     <nav className='session-links'>
-      <nav>
-      <Link to="/login">login</Link>
-      </nav>
-        &nbsp;or&nbsp;
-      <nav className="login-signup">
-        <Link to="/signup">signup</Link>
-      </nav>
+      <div className='links-form'>
+          <Link to="/" className="header-link">
+            <h1 className="dimterest-header">dimterest</h1>
+          </Link>
+        {/* <button className="login-signup"> */}
+        <Link className='greet-login' to="/login">login</Link>
+        {/* </button> */}
+          {/* &nbsp;&nbsp;or&nbsp;&nbsp; */}
+        {/* <button className="login-signup"> */}
+          <Link className='greet-login' to="/signup">signup</Link>
+        {/* </button> */}
+      </div>
     </nav>
   );
   const personalGreeting = () => (
@@ -22,7 +27,13 @@ const Greeting = ({ currentUser, logout }) => {
     </hgroup>
   );
 
-  return currentUser ? personalGreeting() : sessionLinks();
+  const loginSuccess = () => (
+    <div>
+
+    </div>
+  );
+
+  return currentUser ? loginSuccess() : sessionLinks();
 };
 
 

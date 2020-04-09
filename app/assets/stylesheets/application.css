@@ -21,6 +21,7 @@
  
 
  .dimterest-header {
+   padding: 0;
    font-size: 40px;
    font-style: italic;
    font-family: 'Black Ops One';
@@ -92,27 +93,72 @@
   align-items: center;
 }
 
-.session-submit:hover{
+
+/* CSS for greeting component */
+
+.session-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.links-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding:20px;
+  align-items: center;
+  border-radius: 15px;
+  border-style: outset;
+  background-color: #fffff0;
+}
+
+
+/* .login-signup{
+  background-color: #ab4b52;
+  border-radius: 25px;
+  border-style: outset;
+  height: 40px;
+  width: 150px;
+  font-family: 'Barlow Condensed';
+  font-size: 17px;
+  text-align: center;
+  color: #fffff0;
+} */
+
+.greet-login{
+  text-align: center;
+  text-decoration: none;
+  background-color: #ab4b52;
+  border-radius: 25px;
+  border-style: outset;
+  padding: 10px;
+  width: 150px;
+  font-family: 'Barlow Condensed';
+  font-size: 17px;
+  text-align: center;
+  color: #fffff0;
+}
+
+
+
+.session-submit:hover, .login-signup:hover, .greet-login:hover{
   background-color: #793338;
   color: #d3d3c8;
 }
 
-.session-links{
+.nav-beauty {
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
   align-items: center;
-  text-decoration: none;
+  flex-direction: row;
+  border-bottom: 2px solid darkgrey;
+  background-color: #fffff0;
 }
 
-.session-links a{
-  background-color: #ab4b52;
-  border-radius: 5px;
-  height: 40px;
-  width: 150px;
-  font-family: 'Barlow Condensed';
-  color: #fffff0;
-  border-style: outset;
-  font-size: 17px;
-  text-align: center;
+.menu{
+  display: flex;
+  flex-direction: row;
 }
+
