@@ -6,7 +6,7 @@ class Api::SessionsController < ApplicationController
       render json: ['Imposter...Wrong Credentials!!'], status: 401
     else
       login!(@user)
-      render 'api/users/show';
+      render 'api/users/_show.json.jbuilder';
     end
   end
 

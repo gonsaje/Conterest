@@ -8,14 +8,14 @@
 
 User.destroy_all
 
-demo = User.create!(
+demo = User.create(
   email: 'demo@email.com',
   password: "password",
   age: 99
 )
 
 
-jae = User.create!(
+jae = User.create(
   email: 'jaesong@email.com',
   password: "password",
   age: 23

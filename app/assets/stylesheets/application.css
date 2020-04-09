@@ -15,13 +15,10 @@
  */
 
  html{
-   background-color: #fffff0;
+   background-color: white;
  }
 
- .header-name{
-   font-style: italic;
-   font-family: 'Lucida Grande' ;
- }
+ 
 
  .dimterest-header {
    font-size: 40px;
@@ -33,25 +30,25 @@
    
  }
  
- .login-form-container, .login-signup, .dimterest-header {
+ .signup-form-container ,.login-form-container, .login-signup, .dimterest-header {
    display: flex;
    justify-content: center;
    align-items: center;
  }
 
- .login-form-box{
+ .signup-form-box, .login-form-box{
+   display: flex;
+   flex-direction: column;
    align-items: center;
-   border: 2px solid black;
+   border-style: outset;
    border-radius: 15px;
    padding: 40px;
    padding-top: 15px;
-   background-color:#ab4b52 ;
-   color: #fffff0;
+   background-color: #fffff0;
  }
  
- .login-form-container h4{
-    padding-left: 100px;
-   font-family: 'Nova Cut';
+ .signup-form-container h4, .login-form-container h4{
+   font-family: 'Barlow Condensed';
    font-weight: lighter;
    font-style: italic;
  }
@@ -61,5 +58,61 @@
    font-style: italic;
  }
 
-.login-nav {
+  .signup-form-container h2{
+   font-family: 'Black Ops One';
+   font-weight: lighter;
+   font-style: italic;
+ }
+
+.signup-input, .login-input{
+  border-radius: 20px;
+  width: 200px;
+  height: 20px;
+  font-family: 'Barlow Condensed';
+  color: #ab4b52;
+  font-size: 15px;
+  padding: 5px;
+  font-weight: lighter;
+}
+
+.session-submit{
+  background-color: #ab4b52;
+  border-radius: 20px;
+  height: 40px;
+  width: 150px;
+  font-family: 'Barlow Condensed';
+  color: #fffff0;
+  border-style: outset;
+  font-size: 17px;
+}
+
+.login-form, .signup-form{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.session-submit:hover{
+  background-color: #793338;
+  color: #d3d3c8;
+}
+
+.session-links{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.session-links a{
+  background-color: #ab4b52;
+  border-radius: 5px;
+  height: 40px;
+  width: 150px;
+  font-family: 'Barlow Condensed';
+  color: #fffff0;
+  border-style: outset;
+  font-size: 17px;
+  text-align: center;
 }
