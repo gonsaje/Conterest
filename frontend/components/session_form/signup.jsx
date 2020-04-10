@@ -11,16 +11,27 @@ class SignupForm extends React.Component {
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.renderErrors = this.renderErrors.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
 
   update(type) {
     return e => this.setState({[type]: e.target.value});
+  }
+  
+  componentDidMount() {
+    this.props.clearErrors();
   }
 
   handleSubmit(e) {
     e.preventDefault();
     const user = Object.assign({}, this.state);
     this.props.signup(user)
+      .then(() => this.props.history.push('/'));
+  }
+  handleClick(e) {
+    e.preventDefault();
+    const user = Object.assign({}, { email: 'demo@email.com', password: 'password' });
+    this.props.login(user)
       .then(() => this.props.history.push('/'));
   }
 
@@ -77,6 +88,7 @@ class SignupForm extends React.Component {
             <br />
             <input className="session-submit" type="submit" value="Continue" />
           </div>
+          <button className='demo-user' onClick={this.handleClick}>Demo User</button>
           <div className='signup-guider'>
             Already a member?
               <p className='blue-sign'>{this.props.navLink}</p>

@@ -10,6 +10,7 @@ export default ({ currentUser, logout }) => {
         </Link>
       <div className='menu'>
         <h3 className='user-email'>{currentUser.email}</h3>
+        <i className="fas fa-ellipsis-h"></i>
         <button className='logout-button' onClick={logout}>Logout</button>
       </div>
     </div>

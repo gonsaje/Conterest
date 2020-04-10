@@ -13,6 +13,14 @@ class LoginForm extends React.Component {
     this.renderErrors = this.renderErrors.bind(this);
   }
 
+  // componentWillUpdate() {
+  //   location.reload();
+  // }
+
+  componentDidMount() {
+    this.props.clearErrors();
+
+  }
 
   update(type) {
     return e => this.setState({
@@ -30,8 +38,8 @@ class LoginForm extends React.Component {
   handleClick(e) {
     e.preventDefault();
     const user = Object.assign({}, {email:'demo@email.com', password:'password'});
-    this.props.login(user)
-      .then(() => this.props.history.push('/'));
+    this.props.login(user);
+      // .then(() => this.props.history.push('/'));
   }
 
  

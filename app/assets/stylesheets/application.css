@@ -188,8 +188,8 @@
   background-color: #fffff0;
 }
 .nav-bar{
-  position:relative;
-  background-color: #fffff0;
+  position: sticky;
+  top: 20px;
 }
 
 
@@ -238,4 +238,12 @@
   text-decoration: none;
   color: black;
   font-family: 'Cabin';
+}
+
+.user-email{
+  font-family:'Cabin';
+}
+
+.fas .fa-ellipsis-h {
+  width; 20px;
 }
