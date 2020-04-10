@@ -17,8 +17,8 @@ class SignupForm extends React.Component {
   update(type) {
     return e => this.setState({[type]: e.target.value});
   }
-  
-  componentDidMount() {
+
+  componentWillUnmount() {
     this.props.clearErrors();
   }
 

@@ -17,7 +17,7 @@ class LoginForm extends React.Component {
   //   location.reload();
   // }
 
-  componentDidMount() {
+  componentWillUnmount() {
     this.props.clearErrors();
 
   }
@@ -37,8 +37,7 @@ class LoginForm extends React.Component {
 
   handleClick(e) {
     e.preventDefault();
-    const user = Object.assign({}, {email:'demo@email.com', password:'password'});
-    this.props.login(user);
+    this.props.login({ email: 'demo@email.com', password: 'password' });
       // .then(() => this.props.history.push('/'));
   }
 
