@@ -1,6 +1,6 @@
 class Api::SessionsController < ApplicationController
   protect_from_forgery with: :null_session
-  before_action :ensure_logged_out, only: [:create]
+  # before_action :ensure_logged_out, only: [:create]
 
   def create 
     @user = User.find_by_credentials(params[:user][:email], params[:user][:password])
@@ -8,6 +8,7 @@ class Api::SessionsController < ApplicationController
       render json: ["Imposter! Try Again!"], status: 401
     else
       login!(@user)
+      render 'api/users/show'
     end
   end
 

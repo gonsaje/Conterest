@@ -1,14 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-
-
-const Greeting = ({ currentUser, logout }) => {
+const Greeting = ({ currentUser }) => {
   const sessionLinks = () => (
     <nav className='session-links'>
       <div className='links-form'>
           <Link to="/" className="header-link">
-            <h1 className="dimterest-header"> d</h1>
+            <h1 className="dimterest-header">d</h1>
           </Link>
           <div className='form-titles'>
             <h2>Welcome to Dimterest
@@ -21,12 +19,6 @@ const Greeting = ({ currentUser, logout }) => {
       </div>
     </nav>
   );
-  // const personalGreeting = () => (
-  //   <hgroup className="header-group">
-  //     <h2 className="header-name">Welcome, {currentUser.email}!</h2>
-  //     <button className="header-button" onClick={logout}>Log Out</button>
-  //   </hgroup>
-  // );
 
   const loginSuccess = () => (
     <div>

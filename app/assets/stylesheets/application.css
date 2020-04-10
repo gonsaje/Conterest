@@ -30,6 +30,8 @@
  .form-titles h2 {
     font-size: 40px;
  }
+
+
  .form-titles p {
     font-size: 20px;
     font-style: italic;
@@ -215,6 +217,7 @@
 .blue-sign a{
     color: #ab4b52;
     margin-left: 2px;
+    text-decoration: none;
   }
 
 .header-nav-link{

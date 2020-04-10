@@ -28,6 +28,7 @@ class SignupForm extends React.Component {
     this.props.signup(user)
       .then(() => this.props.history.push('/'));
   }
+
   handleClick(e) {
     e.preventDefault();
     const user = { email: 'demo@email.com', password: 'password' };
