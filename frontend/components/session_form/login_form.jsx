@@ -37,8 +37,8 @@ class LoginForm extends React.Component {
 
   handleClick(e) {
     e.preventDefault();
-    this.props.login({ email: 'demo@email.com', password: 'password' });
-      // .then(() => this.props.history.push('/'));
+    this.props.login({ email: 'demo@email.com', password: 'password' })
+      .then(() => this.props.history.push('/'));
   }
 
  
