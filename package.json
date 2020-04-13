@@ -1,5 +1,5 @@
 {
-  "name": "dimterest_app",
+  "name": "conterest_app",
   "private": true,
   "dependencies": {
     "@babel/core": "^7.9.0",
@@ -34,13 +34,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gonsaje/Dimterest.git"
+    "url": "git+https://github.com/gonsaje/Conterest.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gonsaje/Dimterest/issues"
+    "url": "https://github.com/gonsaje/Conterest/issues"
   },
-  "homepage": "https://github.com/gonsaje/Dimterest#readme"
+  "homepage": "https://github.com/gonsaje/Conterest#readme"
 }

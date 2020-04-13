@@ -55,10 +55,10 @@ class SignupForm extends React.Component {
         {/* <div className='login-nav'>{this.props.navLink}</div> */}
         <form onSubmit={this.handleSubmit} className="signup-form-box">
             <Link to="/" className="header-link">
-              <h1 className="dimterest-header">d</h1>
+              <h1 className="conterest-header">d</h1>
             </Link>
           <div className='form-titles'>
-            <h2>Welcome to Dimterest</h2>
+            <h2>Welcome to Conterest</h2>
           </div>
           {this.renderErrors()}
           <div className="signup-form">

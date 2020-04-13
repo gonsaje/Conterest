@@ -61,10 +61,10 @@ class LoginForm extends React.Component {
         {/* <div className='login-nav'>{this.props.navLink}</div> */}
         <form onSubmit={this.handleSubmit} className="login-form-box">
             <Link to="/" className="header-link">
-              <h1 className="dimterest-header">d</h1>
+              <h1 className="conterest-header">c</h1>
             </Link>
             <div className='form-titles'>
-            <h2>Welcome to Dimterest</h2>
+            <h2>Welcome to Conterest</h2>
             </div>
             {this.renderErrors()}
             <div className="login-form">
@@ -87,7 +87,7 @@ class LoginForm extends React.Component {
             </div>
             <button className='demo-user' onClick={this.handleClick}>Demo User</button>
             <div className='signup-guider'>
-              Not on Dimterest yet? 
+              Not on Conterest yet? 
               <p className='blue-sign'>{this.props.navLink}</p>
             </div>
         </form>

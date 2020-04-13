@@ -6,10 +6,10 @@ const Greeting = ({ currentUser }) => {
     <nav className='session-links'>
       <div className='links-form'>
           <Link to="/" className="header-link">
-            <h1 className="dimterest-header">d</h1>
+            <h1 className="conterest-header">d</h1>
           </Link>
           <div className='form-titles'>
-            <h2>Welcome to Dimterest
+            <h2>Welcome to Conterest
               <p>"issa vibe"</p>
             </h2>
           </div>

@@ -6,7 +6,7 @@ export default ({ currentUser, logout }) => {
     <div className='nav-beauty'>
 
         <Link to="/" className="header-nav-link">
-          <h1 className="dimterest-header">d</h1>
+          <h1 className="conterest-header">c</h1>
         </Link>
       <div className='menu'>
         <h3 className='user-email'>{currentUser.email}</h3>
