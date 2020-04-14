@@ -1,0 +1,150 @@
+.form-titles {
+   padding:none;
+   display:flex;
+   justify-content: center;
+   text-align: center;
+   flex-direction: column;
+   font-family: 'Cabin' ;
+ }
+
+ .form-titles h2 {
+    font-size: 40px;
+ }
+
+
+ .form-titles p {
+    font-size: 20px;
+    font-style: italic;
+ }
+
+ .header-link {
+   text-decoration: none;
+   text-align: center;
+  }
+  
+  
+  .conterest-header {
+    text-align: center;
+    padding: 2px;
+   padding: 0;
+   background-color: #ab4b52;
+   height: 50px;
+   width:50px;
+   border-radius: 50px;
+   font-size: 40px;
+   /* font-style: italic; */
+   font-family: 'Black Ops One';
+   color: #fffff0;
+   
+ }
+
+
+ 
+ .signup-form-container ,.login-form-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  
+ }
+
+ .signup-form-container ,.login-form-container {
+   margin-top: 200px;
+ }
+
+
+ .signup-form-box, .login-form-box{
+   align-self: flex-end;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border-radius: 15px;
+   padding: 40px;
+   padding-top: 15px;
+   background-color: #fffff0;
+ }
+ 
+ 
+
+  .signup-form-container h2, .login-form-container h2{
+   font-family: 'Cabin';
+ }
+
+.signup-input, .login-input{
+  border-radius: 15px;
+  width: 390px;
+  height: 35px;
+  font-family: 'Cabin';
+  color: #ab4b52;
+  font-size: 15px;
+  padding: 5px;
+  font-weight: lighter;
+  border-style: none;
+  border: 2px solid #e1e1d2;
+}
+
+.session-submit:hover, .greet-login:hover, .demo-user:hover{
+  background-color: #793338;
+  color: #d3d3c8;
+}
+
+.demo-user{
+  margin-top: 10px;
+}
+.login-form, .signup-form{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.session-submit, .demo-user{
+  background-color: #ab4b52;
+  border-radius: 8px;
+  height: 40px;
+  width: 390px;
+  font-family: 'Cabin';
+  color: #fffff0;
+  font-size: 17px;
+}
+
+.login-nav {
+  text-align: center;
+  background-color: #fffff0;
+  height: 40px;
+}
+
+
+.signup-guider {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-family: 'Cabin';
+}
+
+.blue-sign a{
+    color: #ab4b52;
+    margin-left: 2px;
+    text-decoration: none;
+  }
+
+.header-nav-link{
+  text-decoration: none;
+}
+
+.error-ul{
+  display:flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.error-li{
+  font-family: 'Cabin';
+  color: #ab4b52;
+}
+
+
+.login-nav a{
+  
+  text-decoration: none;
+  color: black;
+  font-family: 'Cabin';
+}

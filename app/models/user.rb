@@ -5,10 +5,10 @@
 #  id              :bigint           not null, primary key
 #  email           :string           not null
 #  password_digest :string           not null
-#  session_token   :string           not null
-#  user_id         :integer
 #  created_at      :datetime         not null
 #  updated_at      :datetime         not null
+#  age             :integer          not null
+#  session_token   :string
 #
 class User < ApplicationRecord
   validates :email, uniqueness: true, presence: true

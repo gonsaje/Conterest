@@ -1,0 +1,53 @@
+ .session-links{
+   margin-top: 200px;
+ }
+
+ .session-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.links-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding:20px;
+  align-items: center;
+  border-radius: 15px;
+
+  background-color: #fffff0;
+}
+
+.greet-login{
+  text-align: center;
+  text-decoration: none;
+  background-color: #ab4b52;
+  border-radius: 25px;
+  padding: 15px;
+  width: 390px;
+  font-family: 'Cabin';
+  font-size: 17px;
+  text-align: center;
+  color: #fffff0;
+}
+
+.greet-signup{
+  margin-top: 10px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #e2e2d4;
+  border-radius: 25px;
+  padding: 15px;
+  width: 390px;
+  font-family: 'Cabin';
+  font-size: 17px;
+  text-align: center;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.greet-signup:hover{
+  background-color: #cdcdbe;
+}

@@ -1,0 +1,62 @@
+.nav-bar{
+  position: sticky;
+  top: 20px;
+}
+
+.nav-beauty {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  height: 80px;
+  width: 100%;
+  background-color: #fffff0;
+}
+
+.menu{
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  color: black;
+}
+
+
+.fa-angle-down{
+  color: #ab4b52;
+}
+
+.front-nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px;
+}
+
+.nav-search{
+  float: left;
+  width: 100%;
+}
+
+.search-bar{
+  padding: 10px;
+  height: 20px;
+  // width: 1200px;
+  width:100%;
+  border-radius: 25px;
+  border: none;
+  background-color: #e2e2d6;
+  font-family: 'Cabin';
+  font-style: italic;
+}
+
+.header-home-link, .header-following-link{
+  padding: 10px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-family: 'Cabin';
+  color: black;
+}
+
+.header-home-link:hover, .header-following-link:hover{
+  background-color: #e1e1d3;
+}
