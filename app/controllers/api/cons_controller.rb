@@ -2,10 +2,11 @@ class Api::ConsController < ApplicationController
 
   def create
     @con = Con.new(cons_params)
+    @con.author_id = current_user.id
     if @con.save
       render '/api/cons/show'
     else
-      render json: ['Invalid Inputs! Try Again!'], status: 401
+      render json: ['Missing Inputs! Try Again!'], status: 401
     end
   end
 
@@ -16,12 +17,19 @@ class Api::ConsController < ApplicationController
 
   def index
     @cons = Con.all
+    render 'api/cons/index'
+  end
+
+  def destroy
+    con = current_user.cons.find_by(id: params[:id])
+    con.destroy
+    render 'api/cons/index'
   end
 
 
   private
 
   def cons_params
-    params.require(:con).permit(:title, :image_url)
+    params.require(:con).permit(:title)
   end
 end

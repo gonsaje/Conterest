@@ -1,4 +1,4 @@
-import * as ConUtil from '../util/con_util';
+import * as ConUtil from '../util/con_api_util';
 
 export const RECEIVE_CONS = 'RECEIVE_CONS';
 export const RECEIVE_CON = 'RECEIVE_CON';
@@ -20,7 +20,7 @@ const deleteCon = conId => ({
 });
 
 export const fetchAllCons = () => dispatch => (
-  ConUtil.fetchCons()
+  ConUtil.fetchAllCons()
     .then(cons => dispatch(receiveCons(cons)))
 );
 

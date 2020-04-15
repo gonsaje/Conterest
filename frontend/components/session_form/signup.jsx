@@ -26,14 +26,14 @@ class SignupForm extends React.Component {
     e.preventDefault();
     const user = Object.assign({}, this.state);
     this.props.signup(user)
-      .then(() => this.props.history.push('/'));
+      .then(() => this.props.history.push('/feed'));
   }
 
   handleClick(e) {
     e.preventDefault();
     const user = { email: 'demo@email.com', password: 'password' };
     this.props.login(user)
-      .then(() => this.props.history.push('/'));
+      .then(() => this.props.history.push('/feed'));
   }
 
   renderErrors() {

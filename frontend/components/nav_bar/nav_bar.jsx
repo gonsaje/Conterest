@@ -25,9 +25,10 @@ export default ({ currentUser, logout }) => {
         <i className="fas fa-angle-down"></i>
         {/* <ul>
           <li>
-            <button className='logout-button' onClick={logout}>Logout</button>
+            
           </li>
         </ul> */}
+        <button className='logout-button' onClick={logout}>Logout</button>
       </div>
     </div>
   ) : (

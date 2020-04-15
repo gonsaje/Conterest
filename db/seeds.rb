@@ -6,17 +6,71 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Con.destroy_all
 User.destroy_all
 
-demo = User.create(
-  email: 'demo@email.com',
-  password: "password",
-  age: 99
-)
+demo = User.create(email: 'demo@email.com', password: "password",age: 99)
+jae = User.create(email: 'jaesong@email.com',password: "password",age: 23)
+green = User.create(email: 'green@email.com', password: "password",age: 44)
+manny = User.create(email: 'manny@email.com',password: "password",age: 26)
+hwatu = User.create(email: 'hwatu@email.com', password: "password",age: 34)
+blue = User.create(email: 'blue@email.com',password: "password",age: 65)
 
 
-jae = User.create(
-  email: 'jaesong@email.com',
-  password: "password",
-  age: 23
-)
+c1 = Con.create(author_id: demo.id, title: 'neon' )
+file1 = open('https://conterest-seeds.s3.amazonaws.com/Amazing.jpeg')
+c1.photo.attach(io: file1, filename: 'Amazing.jpeg')
+
+c2 = Con.create(author_id:demo.id, title: 'arches' )
+file2 = open('https://conterest-seeds.s3.amazonaws.com/architect.jpeg')
+c2.photo.attach(io: file2, filename: 'architect.jpeg')
+
+# c3 = Con.create(author_id:demo.id, title: )
+# c4 = Con.create(author_id:demo.id, title: )
+# c5 = Con.create(author_id:demo.id, title: )
+# c6 = Con.create(author_id:demo.id, title: )
+# c7 = Con.create(author_id:demo.id, title: )
+# c8 = Con.create(author_id:jae.id, title: )
+# c9 = Con.create(author_id:jae.id,  title: )
+# c10 = Con.create(author_id:jae.id,  title: )
+# c11 = Con.create(author_id:jae.id, title: )
+# c12 = Con.create(author_id:jae.id, title: )
+# c13 = Con.create(author_id:jae.id,title: )
+# c14 = Con.create(author_id:jae.id, title: )
+# c15 = Con.create(author_id:jae.id, title: )
+# c16 = Con.create(author_id:jae.id, title: )
+# c17 = Con.create(author_id:jae.id, title: )
+# c18 = Con.create(author_id:jae.id, title: )
+# c18 = Con.create(author_id:jae.id, title: )
+# c19 = Con.create(author_id:jae.id, title: )
+# c20 = Con.create(author_id:jae.id, title: )
+# c21 = Con.create(author_id:jae.id, title: )
+# c22 = Con.create(author_id:jae.id, title: )
+# c23 = Con.create(author_id:jae.id, title: )
+# c24 = Con.create(author_id:jae.id, title: )
+# c25 = Con.create(author_id:green.id, title: )
+# c26 = Con.create(author_id:green.id, title: )
+# c27 = Con.create(author_id:green.id, title: )
+# c28 = Con.create(author_id:green.id, title: )
+# c29 = Con.create(author_id:manny.id, title: )
+# c30 = Con.create(author_id:manny.id, title: )
+# c31 = Con.create(author_id:manny.id, title: )
+# c32 = Con.create(author_id:manny.id, title: )
+# c33 = Con.create(author_id:manny.id, title: )
+# c34 = Con.create(author_id:manny.id, title: )
+# c35 = Con.create(author_id:manny.id, title: )
+# c36 = Con.create(author_id:hwatu.id, title: )
+# c37 = Con.create(author_id:hwatu.id, title: )
+# c38 = Con.create(author_id:hwatu.id, title: )
+# c39 = Con.create(author_id:hwatu.id, title: )
+# c40 = Con.create(author_id:hwatu.id, title: )
+# c41 = Con.create(author_id:hwatu.id, title: )
+# c42 = Con.create(author_id:blue.id, title: )
+# c43 = Con.create(author_id:blue.id, title: )
+# c44 = Con.create(author_id:blue.id, title: )
+# c45 = Con.create(author_id:blue.id, title: )
+# c46 = Con.create(author_id:blue.id,title: )
+# c47 = Con.create(author_id:blue.id, title: )
+# c48 = Con.create(author_id:blue.id, title: )
+# c49 = Con.create(author_id:blue.id, title: )
+# c50 = Con.create(author_id:blue.id, title:)
