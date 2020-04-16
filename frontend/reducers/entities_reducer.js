@@ -6,5 +6,4 @@ import cons from './cons_reducer';
 export default combineReducers({
   users,
   cons,
-  
 });

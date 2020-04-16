@@ -44,11 +44,14 @@
    display: flex;
    justify-content: center;
    align-items: center;
-  
+   
  }
 
  .signup-form-container ,.login-form-container {
    margin-top: 200px;
+   height: 100%;
+   padding: 2px;
+   background: rgba(0, 0, 0, 0.8);
  }
 
 
@@ -61,6 +64,7 @@
    padding: 40px;
    padding-top: 15px;
    background-color: #fffff0;
+   
  }
  
  

@@ -5,13 +5,13 @@ export default ({ currentUser, logout }) => {
   const navBar = currentUser ? (
     <div className='nav-beauty'>
       <div className='front-nav'>
-        <Link to="/" className="header-nav-link">
+        <Link to="/feed" className="header-nav-link">
           <h1 className="conterest-header">C</h1>
         </Link>
-        <Link to="/dims" className="header-home-link">
+        <Link to="/feed" className="header-home-link">
           <h1 className="home">Home</h1>
         </Link>
-        <Link to="/" className="header-following-link">
+        <Link to="/following" className="header-following-link">
           <h1 className="following">Following</h1>
         </Link>
       </div>

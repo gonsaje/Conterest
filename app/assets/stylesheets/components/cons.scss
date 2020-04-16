@@ -1,18 +1,30 @@
-.con-index {
-  display: flex;
-}
+// .con-index {
+//   display: flex;
+// }
 
 .con-image {
-  display: flex;
-  justify-content: space-between;
+  column-count: 7;
+
+  width: 90%;
+  margin: 50px auto;
 }
 
+// .con-image {
+//   display: flex;
+//   justify-content: space-between;
+// }
+
 .con-photo{
-  padding: 40px;
-  width: 200px;
+  padding-bottom: 2em;
 }
 
 .con-photo img {
+  border-radius: 25px;
 
   width: 100%;
+}
+.con-photo img:hover{
+    cursor: -moz-zoom-in; 
+    cursor: -webkit-zoom-in; 
+    cursor: zoom-in;
 }

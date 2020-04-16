@@ -7,8 +7,8 @@ import ConIndexItem from "../cons/con_item";
 
 const mapDispatchToProps = dispatch => {
   return {
-    editPin: () => dispatch(editPin()),
-    deletePin: conId => dispatch(deletePin(pinId)),
+    // editPin: () => dispatch(editPin()),
+    // deletePin: conId => dispatch(deletePin(conId)),
     // openModal: (type, props) => dispatch(openModal(type, props))
   };
 };

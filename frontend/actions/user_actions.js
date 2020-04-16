@@ -13,8 +13,8 @@ const receiveUser = user => ({
   user
 });
 
-export const fetchAllUsers = () => dispatch =>
-  UserApiUtil.fetchAllUsers().then(users => dispatch(receiveUsers(users)));
+export const fetchAllUsers = () => dispatch =>(
+  UserApiUtil.fetchAllUsers().then(users => dispatch(receiveUsers(users))));
 
-export const fetchUser = id => dispatch =>
-  UserApiUtil.fetchUser(id).then(user => dispatch(receiveUser(user)));
+export const fetchUser = id => dispatch => (
+  UserApiUtil.fetchUser(id).then(user => dispatch(receiveUser(user))));

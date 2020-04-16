@@ -1,28 +1,22 @@
 import { connect } from 'react-redux';
 import ConShow from './con_show';
-import { fetchCon, editCon, createCon } from '../../actions/cons_actions';
+import { fetchCon} from '../../actions/cons_actions';
 import { withRouter } from "react-router-dom";
 // import { openModal } from '../../actions/modal_actions'
 // import { fetchAllBoards } from '../../actions/board_actions';
 
 const msp = (state, ownProps) => {
-  const pin = state.entities.pins[ownProps.match.params.id];
-
-  // let board;
+  debugger
+  const con = state.entities.cons[ownProps.match.params.id];
   let author;
-  // let boards;
-  if (pin) {
-    // board = state.entities.boards[pin.board_id];
-    // boards = state.entities.boards;
+  if (con) {
     author = state.entities.users[con.author_id];
   } else {
-    // board = {};
-    // boards = {};
     author = {};
   }
 
 
-  return { pin, board, author, boards }
+  return { con, author};
 }
 
 const mdp = dispatch => ({

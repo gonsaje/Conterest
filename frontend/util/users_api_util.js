@@ -8,7 +8,7 @@ export const edit = user => {
 
 export const fetchUser = user => {
   return $.ajax({
-    url: `/api/user/${user.id}`,
+    url: `/api/users/${user.id}`,
     method: "GET",
     data: { user }
   })

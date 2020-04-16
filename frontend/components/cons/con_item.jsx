@@ -9,14 +9,14 @@ class ConIndexItem extends React.Component {
     this.state = {
       title: this.props.con.title,
       id: this.props.con.id
-    }
+    };
     this.handleClick = this.handleClick.bind(this);
   }
 
 
   handleClick() {
     const con = this.props.con;
-    this.props.history.push(`/cons/${con.id}`)
+    this.props.history.push(`/cons/${con.id}`);
   }
 
   render() {
