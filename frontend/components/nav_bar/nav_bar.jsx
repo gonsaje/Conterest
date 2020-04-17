@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default ({ currentUser, logout }) => {
-  
+
   const navBar = currentUser ? (
     <div className='nav-beauty'>
       <div className='front-nav'>
@@ -20,7 +20,7 @@ export default ({ currentUser, logout }) => {
         <input className='search-bar' type="search" placeholder='"issa vibe?"'/>
       </div>
       <div className='menu'>
-        <button onClick={}><i className="fas fa-bell"></i></button>
+        <button><i className="fas fa-bell"></i></button>
         <button><i className="fas fa-comment-dots"></i></button>
         <button><i className="fas fa-portrait"></i>  </button>
         <button><i className="fas fa-angle-down"></i></button>      
