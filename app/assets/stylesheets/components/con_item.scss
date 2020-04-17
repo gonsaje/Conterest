@@ -13,6 +13,7 @@
 
 .con-container{
   margin:50px auto;
+  margin-top: 90px;
   display: flex;
   margin:auto;
   width:1000px;
@@ -22,6 +23,8 @@
 }
 
 #back {
+  margin-top: 100px;
+  position: fixed;
   background: none;
   margin-left: 10px;
   font-size: 30px;
