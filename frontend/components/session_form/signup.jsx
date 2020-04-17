@@ -55,7 +55,7 @@ class SignupForm extends React.Component {
         {/* <div className='login-nav'>{this.props.navLink}</div> */}
         <form onSubmit={this.handleSubmit} className="signup-form-box">
             <Link to="/" className="header-link">
-              <h1 className="conterest-header">C</h1>
+            <img className='conterest-logo' id="logo" src={window.logoURL} />
             </Link>
           <div className='form-titles'>
             <h2>Welcome to Conterest</h2>

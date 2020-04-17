@@ -2,11 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default ({ currentUser, logout }) => {
+  
   const navBar = currentUser ? (
     <div className='nav-beauty'>
       <div className='front-nav'>
         <Link to="/feed" className="header-nav-link">
-          <h1 className="conterest-header">C</h1>
+          <img className='conterest-logo' id="logo" src={window.logoURL} />
         </Link>
         <Link to="/feed" className="header-home-link">
           <h1 className="home">Home</h1>
@@ -19,10 +20,11 @@ export default ({ currentUser, logout }) => {
         <input className='search-bar' type="search" placeholder='"issa vibe?"'/>
       </div>
       <div className='menu'>
-        <i className="fas fa-bell"></i>
-        <i className="fas fa-comment-dots"></i>
-        <i className="fas fa-portrait"></i>        
-        <i className="fas fa-angle-down"></i>
+        <button onClick={}><i className="fas fa-bell"></i></button>
+        <button><i className="fas fa-comment-dots"></i></button>
+        <button><i className="fas fa-portrait"></i>  </button>
+        <button><i className="fas fa-angle-down"></i></button>      
+        
         {/* <ul>
           <li>
             
@@ -37,8 +39,8 @@ export default ({ currentUser, logout }) => {
     </div>
   );
   return (
-    <header className="nav-bar"> 
+    <div className="nav-bar"> 
         {navBar}
-    </header>
+    </div>
   )
 }

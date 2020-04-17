@@ -24,12 +24,8 @@ class ConIndexItem extends React.Component {
     return (
       <>
         <div className="con-photo">
-          {photo}
-          {/* <button className="magic-button" onClick={() => this.props.openModal('editPin', { id: this.props.pin.id })}><img className='editform-logo' src={window.editURL} /></button>
-
-          Add pin to a board, edit a pin  */}
-
-          {/* <h6 className="con-title">{this.props.con.title}</h6> */}
+          <div className="overlay">{photo}</div>
+          
 
         </div>
       </>
@@ -37,3 +33,8 @@ class ConIndexItem extends React.Component {
   }
 }
 export default ConIndexItem;
+{/* <button className="magic-button" onClick={() => this.props.openModal('editPin', { id: this.props.pin.id })}><img className='editform-logo' src={window.editURL} /></button>
+
+          Add pin to a board, edit a pin  */}
+
+{/* <h6 className="con-title">{this.props.con.title}</h6> */ }

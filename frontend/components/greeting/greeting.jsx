@@ -6,7 +6,7 @@ const Greeting = ({ currentUser }) => {
     <nav className='session-links'>
       <div className='links-form'>
           <Link to="/" className="header-link">
-            <h1 className="conterest-header">C</h1>
+          <img className='conterest-logo' id="logo" src={window.logoURL} />
           </Link>
           <div className='form-titles'>
             <h2>Welcome to Conterest

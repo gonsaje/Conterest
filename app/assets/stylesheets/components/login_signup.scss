@@ -9,6 +9,7 @@
 
  .form-titles h2 {
     font-size: 40px;
+    padding-bottom: 1em;
  }
 
 
@@ -23,19 +24,21 @@
   }
   
   
-  .conterest-header {
-    text-align: center;
-    padding: 2px;
-   padding: 0;
-   background-color: #ab4b52;
-   height: 50px;
-   width:50px;
-   border-radius: 50px;
-   font-size: 40px;
-   /* font-style: italic; */
-   font-family: 'Black Ops One';
-   color: #fffff0;
-   
+  .conterest-logo {
+  //   text-align: center;
+  //   padding: 2px;
+  //  padding: 0;
+  // //  background-color: #ab4b52;
+  //  height: 50px;
+  //  width:50px;
+  //  border-radius: 50px;
+  //  font-size: 40px;
+  //  /* font-style: italic; */
+  //  font-family: 'Cabin';
+  //  color: #fffff0;
+  padding: 10px;
+   width: 60px;
+   height: 60px;;
  }
 
 
@@ -51,7 +54,6 @@
    margin-top: 200px;
    height: 100%;
    padding: 2px;
-   background: rgba(0, 0, 0, 0.8);
  }
 
 
@@ -64,6 +66,7 @@
    padding: 40px;
    padding-top: 15px;
    background-color: #fffff0;
+   border: 1px solid lightgrey;
    
  }
  
@@ -118,6 +121,7 @@
 
 
 .signup-guider {
+  padding-top:5px;
   display: flex;
   align-items: center;
   font-size: 14px;

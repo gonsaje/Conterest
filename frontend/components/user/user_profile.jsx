@@ -6,6 +6,8 @@ class UserProfile extends React.Component {
   }
 
   render() {
-    
+
   }
 }
+
+export default UserProfile;

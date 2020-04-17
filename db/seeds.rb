@@ -108,30 +108,111 @@ c22.photo.attach(io: file22, filename: 'heart.jpeg')
 c23 = Con.create(author_id:jae.id, title: 'city livin')
 file23 = open('https://conterest-seeds.s3.amazonaws.com/highrise.jpg')
 c23.photo.attach(io: file23, filename: 'highrise.jpg')
-# c24 = Con.create(author_id:jae.id, title: )
-# c25 = Con.create(author_id:green.id, title: )
-# c26 = Con.create(author_id:green.id, title: )
-# c27 = Con.create(author_id:green.id, title: )
-# c28 = Con.create(author_id:green.id, title: )
-# c29 = Con.create(author_id:manny.id, title: )
-# c30 = Con.create(author_id:manny.id, title: )
-# c31 = Con.create(author_id:manny.id, title: )
-# c32 = Con.create(author_id:manny.id, title: )
-# c33 = Con.create(author_id:manny.id, title: )
-# c34 = Con.create(author_id:manny.id, title: )
-# c35 = Con.create(author_id:manny.id, title: )
-# c36 = Con.create(author_id:hwatu.id, title: )
-# c37 = Con.create(author_id:hwatu.id, title: )
-# c38 = Con.create(author_id:hwatu.id, title: )
-# c39 = Con.create(author_id:hwatu.id, title: )
-# c40 = Con.create(author_id:hwatu.id, title: )
-# c41 = Con.create(author_id:hwatu.id, title: )
-# c42 = Con.create(author_id:blue.id, title: )
-# c43 = Con.create(author_id:blue.id, title: )
-# c44 = Con.create(author_id:blue.id, title: )
-# c45 = Con.create(author_id:blue.id, title: )
-# c46 = Con.create(author_id:blue.id,title: )
-# c47 = Con.create(author_id:blue.id, title: )
-# c48 = Con.create(author_id:blue.id, title: )
-# c49 = Con.create(author_id:blue.id, title: )
-# c50 = Con.create(author_id:blue.id, title:)
+
+c24 = Con.create(author_id:jae.id, title: 'JFK' )
+file24 = open('https://conterest-seeds.s3.amazonaws.com/jfk.jpeg')
+c24.photo.attach(io: file24, filename: 'jfk.jpeg')
+
+c25 = Con.create(author_id:green.id, title: 'More JFK')
+file25 = open('https://conterest-seeds.s3.amazonaws.com/jfk2.jpeg')
+c25.photo.attach(io: file25, filename: 'jfk2.jpeg')
+
+c26 = Con.create(author_id:green.id, title: "We're all just labels" )
+file26 = open('https://conterest-seeds.s3.amazonaws.com/labels.jpeg')
+c26.photo.attach(io: file26, filename: 'labels.jpeg')
+
+c27 = Con.create(author_id:green.id, title: 'Hop In')
+file27 = open('https://conterest-seeds.s3.amazonaws.com/legs.jpeg')
+c27.photo.attach(io: file27, filename: 'legs.jpeg')
+
+c28 = Con.create(author_id:green.id, title: 'redRedRED')
+file28 = open('https://conterest-seeds.s3.amazonaws.com/lines.jpeg')
+c28.photo.attach(io: file28, filename: 'lines.jpeg')
+
+c29 = Con.create(author_id:manny.id, title: 'Lundone')
+file29 = open('https://conterest-seeds.s3.amazonaws.com/london.jpeg')
+c29.photo.attach(io: file29, filename: 'london.jpeg')
+
+c30 = Con.create(author_id:manny.id, title: 'Door to somewhere?' )
+file30 = open('https://conterest-seeds.s3.amazonaws.com/neon_rect.jpeg')
+c30.photo.attach(io: file30, filename: 'neon_rect.jpeg')
+
+c31 = Con.create(author_id:manny.id, title: 'just nowhere' )
+file31 = open('https://conterest-seeds.s3.amazonaws.com/nowhere.jpeg')
+c31.photo.attach(io: file31, filename: 'nowhere.jpeg')
+
+c32 = Con.create(author_id:manny.id, title: "Open Your Mind")
+file32 = open('https://conterest-seeds.s3.amazonaws.com/openmind.png')
+c32.photo.attach(io: file32, filename: 'openmind.png')
+
+c33 = Con.create(author_id:manny.id, title: "with closed hands")
+file33 = open('https://conterest-seeds.s3.amazonaws.com/prayer.jpeg')
+c33.photo.attach(io: file33, filename: 'prayer.jpeg')
+
+c34 = Con.create(author_id:manny.id, title:'Look at meeee' )
+file34 = open('https://conterest-seeds.s3.amazonaws.com/rainbow.jpeg')
+c34.photo.attach(io: file34, filename: 'rainbow.jpeg')
+
+c35 = Con.create(author_id:manny.id, title:"banner")
+file35 = open('https://conterest-seeds.s3.amazonaws.com/red_banner.jpeg')
+c35.photo.attach(io: file35, filename: 'red_banner.jpeg')
+
+c36 = Con.create(author_id:hwatu.id, title: 'issa vibe')
+file36 = open('https://conterest-seeds.s3.amazonaws.com/red_silo.jpeg')
+c36.photo.attach(io: file36, filename: 'red_silo.jpeg')
+
+c37 = Con.create(author_id:hwatu.id, title: 'Circle')
+file37 = open('https://conterest-seeds.s3.amazonaws.com/redcircle.jpeg')
+c37.photo.attach(io: file37, filename: 'redcircle.jpeg')
+
+c38 = Con.create(author_id:hwatu.id, title:'Redeye' )
+file38 = open('https://conterest-seeds.s3.amazonaws.com/redeye.png')
+c38.photo.attach(io: file38, filename: 'redeye.png')
+
+c39 = Con.create(author_id:hwatu.id, title:'Sunset' )
+file39 = open('https://conterest-seeds.s3.amazonaws.com/redsun.jpeg')
+c39.photo.attach(io: file39, filename: 'redsun.jpeg')
+
+c40 = Con.create(author_id:hwatu.id, title: 'blues')
+file40 = open('https://conterest-seeds.s3.amazonaws.com/retrowave.jpeg')
+c40.photo.attach(io: file40, filename: 'retrowave.jpeg')
+
+c41 = Con.create(author_id:hwatu.id, title: 'Roxanne')
+file41 = open('https://conterest-seeds.s3.amazonaws.com/roxanne.jpeg')
+c41.photo.attach(io: file41, filename: 'jfk2.jpeg')
+
+c42 = Con.create(author_id:blue.id, title: 'Scream')
+file42 = open('https://conterest-seeds.s3.amazonaws.com/scream.jpeg')
+c42.photo.attach(io: file42, filename: 'scream.jpeg')
+
+c43 = Con.create(author_id:blue.id, title:"silos" )
+file43 = open('https://conterest-seeds.s3.amazonaws.com/silo.jpeg')
+c43.photo.attach(io: file43, filename: 'silo.jpeg')
+
+c44 = Con.create(author_id:blue.id, title: "Stairs to Where")
+file44 = open('https://conterest-seeds.s3.amazonaws.com/stairs.jpeg')
+c44.photo.attach(io: file44, filename: 'stairs.jpeg')
+
+c45 = Con.create(author_id:blue.id, title:"Sunset" )
+file45 = open('https://conterest-seeds.s3.amazonaws.com/sunset.jpeg')
+c45.photo.attach(io: file45, filename: 'sunset.jpeg')
+
+c46 = Con.create(author_id:blue.id,title: "Tokyo Undergrounds")
+file46 = open('https://conterest-seeds.s3.amazonaws.com/Tokyo1330.jpeg')
+c46.photo.attach(io: file46, filename: 'Tokyo1330.jpeg')
+
+c47 = Con.create(author_id:blue.id, title:'Tori' )
+file47 = open('https://conterest-seeds.s3.amazonaws.com/tori.jpeg')
+c47.photo.attach(io: file47, filename: 'tori.jpeg')
+
+c48 = Con.create(author_id:blue.id, title: '37K')
+file48 = open('https://conterest-seeds.s3.amazonaws.com/TweetDeck.jpeg')
+c48.photo.attach(io: file48, filename: 'TweetDeck.jpeg')
+
+c49 = Con.create(author_id:blue.id, title: 'Head Underwater')
+file49 = open('https://conterest-seeds.s3.amazonaws.com/underwater.jpeg')
+c49.photo.attach(io: file49, filename: 'underwater.jpeg')
+
+c50 = Con.create(author_id:blue.id, title:'Vortex')
+file50 = open('https://conterest-seeds.s3.amazonaws.com/vortex.jpeg')
+c50.photo.attach(io: file50, filename: 'vortex.jpeg')

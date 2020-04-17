@@ -80,14 +80,19 @@ class ConShow extends React.Component {
     }
     return (
       <>
-        <button id="back" onClick={this.redirect_feed}>X</button>
+        <button id="back" onClick={this.redirect_feed}>
+          <i className="fas fa-arrow-left"></i>
+        </button>
         <div className="con-container">
           <div id='con-image'><img src={this.props.con.photo_url} /></div>
           {/* <button className="red-button" id="edit" onClick={() => this.props.openModal('editCon', { id: this.props.Con.id })}>Edit</button> */}
           <div id="con-info">
+            <button>
+              <i className="fas fa-pencil-alt"></i>
+            </button>
             <h3>{this.props.con.title}</h3>
             {/* <h4>This Con is saved to: {this.props.board.name}</h4> */}
-            <h4>Created by {this.props.author.email} </h4>
+            {/* <h4>Created by {this.props.author.email} </h4> */}
             {/* {this.redirect_link()} */}
             {/* <div className="custom-select">
               <select onChange={this.update("board_id")}>

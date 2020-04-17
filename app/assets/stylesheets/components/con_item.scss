@@ -1,0 +1,64 @@
+.overlay{
+  z-index: 100;
+}
+
+.con-photo > img:hover{
+  width:100%;
+  height:100%;
+  background-color:black;
+  filter: brightness(0.7);
+  z-index: -1;
+  display: initial;
+}
+
+.con-container{
+  margin:50px auto;
+  display: flex;
+  margin:auto;
+  width:1000px;
+  border: 2px solid lightgrey;
+  border-radius: 25px;
+  
+}
+
+#back {
+  background: none;
+  margin-left: 10px;
+  font-size: 30px;
+  border: none;
+  border-radius: 25px;
+}
+#back:hover{
+  background-color: #e2e2d6;
+ 
+}
+
+.con-container button{
+  background: none;
+  border: none;
+  border-radius: 25px;
+  font-size: 30px;
+}
+.con-container button:hover{
+  background-color: #e2e2d6;
+}
+.con-container h3 {
+  margin-left: 10px;
+  margin-top: 50px;
+  font-family: 'Cabin';
+  font-size: 50px;
+}
+
+.con-container img{
+  border-radius: 25px 0px 0px 25px;
+  width: 100%;
+}
+
+#con-image{
+border-radius: 25px 0px 0px 25px;
+height: 100%;
+width: 50%
+}
+#con-info{
+  width: 50%;
+}

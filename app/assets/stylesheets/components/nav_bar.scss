@@ -20,9 +20,24 @@
   color: black;
 }
 
+.menu button{
+  background: none;
+  border: none;
+
+  border-radius: 25px;
+  font-size: 20px;
+
+}
+
 
 .fa-angle-down{
   color: #ab4b52;
+  // height: 100px;
+  // width: 100px;
+}
+
+.menu button:hover{
+  background-color: #e2e2d6;
 }
 
 .front-nav{

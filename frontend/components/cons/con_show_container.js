@@ -6,7 +6,6 @@ import { withRouter } from "react-router-dom";
 // import { fetchAllBoards } from '../../actions/board_actions';
 
 const msp = (state, ownProps) => {
-  debugger
   const con = state.entities.cons[ownProps.match.params.id];
   let author;
   if (con) {
