@@ -23,15 +23,10 @@ export default ({ currentUser, logout }) => {
         <button><i className="fas fa-bell"></i></button>
         <button><i className="fas fa-comment-dots"></i></button>
         <button><i className="fas fa-portrait"></i>  </button>
-        <button><i className="fas fa-angle-down"></i></button>      
-        
-        {/* <ul>
-          <li>
-            
-          </li>
-        </ul> */}
         <button className='logout-button' onClick={logout}>Logout</button>
+       
       </div>
+        
     </div>
   ) : (
     <div>

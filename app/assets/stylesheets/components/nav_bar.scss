@@ -76,3 +76,12 @@
 .header-home-link:hover, .header-following-link:hover{
   background-color: #e1e1d3;
 }
+
+.dropdown {
+  display:none;
+}
+
+.dropdown-btn:hover + .dropdown {
+  display:block;
+  z-index:100;
+}
