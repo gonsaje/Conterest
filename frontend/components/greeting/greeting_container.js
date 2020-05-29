@@ -9,6 +9,16 @@ const mapStateToProps = ({ session, entities: { users } }) => {
 };
 
 const mapDispatchToProps = dispatch => ({
+  processForm: (user) => dispatch(login(user)),
+    otherForm: (
+      <button onClick={() => dispatch(openModal('signup'))}>
+        Sign Up
+      </button>
+      <button onClick={() => dispatch(openModal('login'))}>
+      Log In
+    </button>
+    ),
+    closeModal: () => dispatch(closeModal()),
   logout: () => dispatch(logout()),
 });
 

@@ -101,9 +101,6 @@ c21 = Con.create(author_id:jae.id, title:'like liquid' )
 file21 = open('https://conterest-seeds.s3.amazonaws.com/Hand.jpeg')
 c21.photo.attach(io: file21, filename: 'Hand.jpeg')
 
-c22 = Con.create(author_id:jae.id, title: 'et phone home')
-file22 = open('https://conterest-seeds.s3.amazonaws.com/heart.jpeg')
-c22.photo.attach(io: file22, filename: 'heart.jpeg')
 
 c23 = Con.create(author_id:jae.id, title: 'city livin')
 file23 = open('https://conterest-seeds.s3.amazonaws.com/highrise.jpg')

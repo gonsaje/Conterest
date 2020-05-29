@@ -7,15 +7,9 @@ import { withRouter } from "react-router-dom";
 
 const msp = (state, ownProps) => {
   const con = state.entities.cons[ownProps.match.params.id];
-  let author;
-  if (con) {
-    author = state.entities.users[con.author_id];
-  } else {
-    author = {};
-  }
 
 
-  return { con, author};
+  return { con};
 }
 
 const mdp = dispatch => ({
