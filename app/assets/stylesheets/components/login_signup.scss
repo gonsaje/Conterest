@@ -37,13 +37,16 @@
   //  font-family: 'Cabin';
   //  color: #fffff0;
   padding: 10px;
-   width: 60px;
-   height: 60px;;
+   width: 30px;
+   height: 30px;;
  }
 
 
  
  .signup-form-container ,.login-form-container {
+   height:1000px;
+   background-image: url("splashpage.png");
+   background-size: 1920px;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -51,8 +54,6 @@
  }
 
  .signup-form-container ,.login-form-container {
-   margin-top: 200px;
-   height: 100%;
    padding: 2px;
  }
 
@@ -66,8 +67,8 @@
    padding: 40px;
    padding-top: 15px;
    background-color: #fffff0;
-   border: 1px solid lightgrey;
-   
+
+   margin-bottom: 300px;
  }
  
  

@@ -1,6 +1,5 @@
 import React from 'react';
 import ConItemContainer from './con_item_container';
-import NavBarContainer from '../nav_bar/nav_bar_container';
 
 class ConIndex extends React.Component {
   constructor(props) {

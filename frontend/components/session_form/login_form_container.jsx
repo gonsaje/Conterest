@@ -9,7 +9,7 @@ const mapStateToProps = ({ errors }) => {
   return {
     errors: errors.sessionErrors,
     formType: 'login',
-    // navLink: <Link to="/signup">Sign Up</Link>,
+    navLink: <Link to="/signup">Sign Up</Link>,
   };
 };
 
@@ -22,6 +22,7 @@ const mapDispatchToProps = dispatch => {
       </button>
     ),
     closeModal: () => dispatch(closeModal()),
+    login: user => dispatch(login(user)),
     clearErrors: () => dispatch(clearErrors())
   };
 };

@@ -57,7 +57,7 @@ class LoginForm extends React.Component {
 
   render() {
     return (
-      <div className="login-form-container">
+      <div className="login-form-container"  >
         {/* <div className='login-nav'>{this.props.navLink}</div> */}
         <form onSubmit={this.handleSubmit} className="login-form-box">
             <Link to="/" className="header-link">

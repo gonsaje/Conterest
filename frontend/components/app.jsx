@@ -14,13 +14,14 @@ import Footer from './footer/footer';
 
 const App = () => (
   <div>
-      <Modal/>
+
       <ProtectedRoute path="/" component={NavBarContainer} />
       <ProtectedRoute exact path="/feed" component={ConIndexContainer} />  
       <ProtectedRoute exact path="/cons/:id" component={ConShowContainer} />  
       <AuthRoute exact path='/'component={GreetingContainer}/>
-      
-      <Footer/>
+      <AuthRoute exact path='/login'component={LogInFormContainer}/>
+      <AuthRoute exact path='/signup'component={SignUpFormContainer}/>
+
   </div>
 );
 
