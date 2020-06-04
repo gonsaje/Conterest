@@ -1,9 +1,11 @@
 class BoardsController < ApplicationController
   def create
-    @board
+    @board = Board.new()
+    
   end
 
   def index
+    
   end
 
   def show

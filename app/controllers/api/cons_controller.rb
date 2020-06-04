@@ -20,6 +20,15 @@ class Api::ConsController < ApplicationController
     render 'api/cons/index'
   end
 
+  def edit 
+    @con = Con.find(params[:id])
+    if @con.authtor_id == current_user.id
+      render :edit
+    else
+      render 'api/cons/show'
+    end
+  end
+
   def destroy
     con = current_user.cons.find_by(id: params[:id])
     con.destroy
