@@ -11,7 +11,7 @@ class Api::ConsController < ApplicationController
   end
 
   def show
-    @con = Con.find_by(id: params[:id])
+    @con = Con.find(params[:id])
     render '/api/cons/show'
   end
 

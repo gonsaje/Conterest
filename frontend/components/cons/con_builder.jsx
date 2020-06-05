@@ -28,16 +28,16 @@ class ConBuilder extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const formData = new FormData();
-    formData.append('pin[title]', this.state.title);
-    formData.append('pin[description]', this.state.description);
-    formData.append('pin[board_id]', this.state.board_id);
-    formData.append('pin[errors]', this.state.errors);
+    formData.append('con[title]', this.state.title);
+    formData.append('con[description]', this.state.description);
+    formData.append('con[board_id]', this.state.board_id);
+    formData.append('con[errors]', this.state.errors);
     if (this.state.imageFile) {
-      formData.append('pin[image]', this.state.imageFile)
+      formData.append('con[image]', this.state.imageFile)
     }
-    this.props.createPin(formData)
+    this.props.createcon(formData)
     .then((action) => {
-      this.props.history.push(`/pins/${action.pin.id}`)}, (err) => {
+      this.props.history.push(`/cons/${action.con.id}`)}, (err) => {
       this.setState({ errors: this.renderErrors() })
     })
   }
@@ -63,7 +63,7 @@ class ConBuilder extends React.Component {
 
   handleSelect(e) {
     e.preventDefault();
-    let selected = document.getElementsByClassName("show-pin-select")[0];
+    let selected = document.getElementsByClassName("show-con-select")[0];
     let boardTitle = e.currentTarget;
     selected.innerText = boardTitle.innerText;
     let boardId = this.boardFromTitle(boardTitle.innerText).id
@@ -83,8 +83,8 @@ class ConBuilder extends React.Component {
   renderErrors() {
     let error = []
     
-    if (this.props.errors[0].includes("Image An image is required to create a Pin.")) {
-      error.push("An image is required to create a Pin.");
+    if (this.props.errors[0].includes("Image An image is required to create a con.")) {
+      error.push("An image is required to create a con.");
       return error
     } 
     

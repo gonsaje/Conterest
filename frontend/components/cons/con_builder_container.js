@@ -6,12 +6,12 @@ import ConBuilder from './con_builder';
 const mapStateToProps = state => ({
   currentUser: state.session.currentUser,
   boards: Object.values(state.entities.boards),
-  errors: Object.values(state.errors.pins),
+  errors: Object.values(state.errors.cons),
   user: Object.values(state.entities.users)[0],
 })
 
 const mapDispatchToProps = dispatch => ({
-  createPin: pin => dispatch(newCon(con)),
+  createCon: con => dispatch(newCon(con)),
   fetchUser: userId => dispatch(fetchUser(userId)),
 })
 

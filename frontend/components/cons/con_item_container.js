@@ -4,7 +4,9 @@ import ConIndexItem from "../cons/con_item";
 // import { editPin, deletePin } from "../../actions/pin_actions";
 // import { openModal } from '../../actions/modal_actions';
 
-
+const mapStateToProps = (state, ownProps) => {
+  
+}
 const mapDispatchToProps = dispatch => {
   return {
     // editPin: () => dispatch(editPin()),
