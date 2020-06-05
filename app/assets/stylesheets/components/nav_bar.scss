@@ -2,6 +2,7 @@
   position: fixed;
   width: 100%;
   top: 0px;
+  z-index: 1000;
 }
 
 .nav-beauty {
@@ -12,6 +13,7 @@
   height: 80px;
   width: 100%;
   background-color: #fffff0;
+  z-index:100;
 }
 
 .menu{
