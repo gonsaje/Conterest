@@ -6,9 +6,7 @@ import { withRouter } from "react-router-dom";
 
 const msp = (state, ownProps) => {
   const con = state.entities.cons[ownProps.match.params.id];
-
-
-  return { con};
+  return {con};
 }
 
 const mdp = dispatch => ({
