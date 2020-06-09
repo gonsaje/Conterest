@@ -22,6 +22,9 @@ class User < ApplicationRecord
   has_many :cons,
     foreign_key: :author_id
 
+  has_many :boards,
+    foreign_key: :user_id
+
   has_many :received_follows, 
   foreign_key: :followed_user_id, 
   class_name: "Follow"

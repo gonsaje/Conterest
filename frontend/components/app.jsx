@@ -15,7 +15,6 @@ import Links from './footer/links';
 
 const App = () => (
   <div>
-
       <ProtectedRoute path="/" component={NavBarContainer} />
       <ProtectedRoute exact path="/feed" component={ConIndexContainer} />  
       <ProtectedRoute exact path="/cons/:id" component={ConShowContainer} />  
@@ -24,6 +23,7 @@ const App = () => (
       <AuthRoute exact path='/signup'component={SignUpFormContainer}/>
       <ProtectedRoute path="/" component={Footer}/>
       <ProtectedRoute path="/" component={Links}/>
+      
   </div>
 );
 

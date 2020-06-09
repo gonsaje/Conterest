@@ -12,7 +12,6 @@ const receiveBoards = boards => ({
 });
 
 const receiveBoard = board => {
-  // debugger
   return {
     type: RECEIVE_BOARD,
     board: board,
@@ -30,7 +29,6 @@ const removeBoard = boardId => ({
   type: REMOVE_BOARD,
   boardId
 })
-
 
 export const clearErrors = () => ({
   type: CLEAR_ERRORS

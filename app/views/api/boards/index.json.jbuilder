@@ -1,5 +1,5 @@
 @boards.each do |board|
   json.set! board.id do 
-    json.extract! board, :name, :author_id, :id, :description
+    json.extract! board, :title, :user_id, :id
   end
 end

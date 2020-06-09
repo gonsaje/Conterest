@@ -22,7 +22,10 @@ export default ({ currentUser, logout }) => {
       <div className='menu'>
         <button><i className="fas fa-bell"></i></button>
         <button><i className="fas fa-comment-dots"></i></button>
+        <Link to={`/profile/${currentUser.id}`}>
         <button><i className="fas fa-portrait"></i>  </button>
+        </Link>
+        
         <button className='logout-button' onClick={logout}>Logout</button>
        
       </div>
