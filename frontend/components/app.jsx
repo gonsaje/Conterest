@@ -12,6 +12,7 @@ import ConShowContainer from './cons/con_show_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import Footer from './footer/footer';
 import Links from './footer/links';
+import ProfileContainer from "./profile/profile_container";
 
 const App = () => (
   <div>
@@ -23,6 +24,7 @@ const App = () => (
       <AuthRoute exact path='/signup'component={SignUpFormContainer}/>
       <ProtectedRoute path="/" component={Footer}/>
       <ProtectedRoute path="/" component={Links}/>
+      <ProtectedRoute exact path = "/profile/:id" component={ProfileContainer}/>
       
   </div>
 );
