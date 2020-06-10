@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    
     <title>Conterest</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,16 +10,13 @@
     <meta property="og:url" content="https://conterest.herokuapp.com" />
 
     <link href='https://fonts.googleapis.com/css?family=Black+Ops+One|Cabin' rel='stylesheet' type='text/css'>
-    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= stylesheet_link_tag 'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
     <script type="text/javascript">
-        window.logoURL = "<%= image_url('readmelogo.png') %>";
+        window.logoURL = <%= image_url('readmelogo.png') %>;
     </script>
     <%= favicon_link_tag asset_path('readmelogo.png') %>
-    <script
-      src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
-      data-auto-a11y="true"
-    ></script>
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-a11y="true"></script>
 
   </head>
   <body>
