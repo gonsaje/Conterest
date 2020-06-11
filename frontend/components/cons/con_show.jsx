@@ -29,9 +29,9 @@ class ConShow extends React.Component {
       return <div className="loader"></div>
     }
 
-    const boards = Object.values(this.props.boards).map(board => {
-      return <option></option>
-    });
+    // const boards = Object.values(this.props.boards).map(board => {
+    //   return <option></option>
+    // });
 
     return (
       <>

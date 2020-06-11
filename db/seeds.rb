@@ -6,8 +6,11 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Follow.destroy_all
+Board.destroy_all
 Con.destroy_all
 User.destroy_all
+
 
 demo = User.create(email: 'demo@email.com', password: "password",age: 99)
 jae = User.create(email: 'jaesong@email.com',password: "password",age: 23)
@@ -16,6 +19,9 @@ manny = User.create(email: 'manny@email.com',password: "password",age: 26)
 hwatu = User.create(email: 'hwatu@email.com', password: "password",age: 34)
 blue = User.create(email: 'blue@email.com',password: "password",age: 65)
 
+b1 = Board.create(title:"moodz", user_id:demo.id)
+b2 = Board.create(title:"vibez", user_id:demo.id)
+b3 = Board.create(title:"viewz", user_id:demo.id)
 
 c1 = Con.create(author_id: demo.id, title: 'neon' )
 file1 = open('https://conterest-seeds.s3.amazonaws.com/Amazing.jpeg')
@@ -213,3 +219,8 @@ c49.photo.attach(io: file49, filename: 'underwater.jpeg')
 c50 = Con.create(author_id:blue.id, title:'Vortex')
 file50 = open('https://conterest-seeds.s3.amazonaws.com/vortex.jpeg')
 c50.photo.attach(io: file50, filename: 'vortex.jpeg')
+
+f1 = Follow.create(follower_id:demo.id, followed_user_id:jae.id)
+f2 = Follow.create(follower_id:demo.id, followed_user_id:green.id)
+f3 = Follow.create(follower_id:demo.id, followed_user_id:blue.id)
+f4 = Follow.create(follower_id:jae.id, followed_user_id:demo.id)
