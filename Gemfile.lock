@@ -241,7 +241,7 @@ DEPENDENCIES
   pg (>= 0.18, < 2.0)
   pry-rails
   puma (~> 3.11)
-  rails (~> 5.2.4, >= 5.2.4.3)
+  rails (~> 5.2.4, >= 5.2.4.2)
   sass-rails (~> 5.0)
   selenium-webdriver
   spring

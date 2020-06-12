@@ -4,10 +4,13 @@ export const RECEIVE_CONS = 'RECEIVE_CONS';
 export const RECEIVE_CON = 'RECEIVE_CON';
 export const DELETE_CON = 'DELETE_CON';
 
-const receiveCon = (con) => ({
-  type: RECEIVE_CON,
-  con
-});
+const receiveCon = (con) => {
+  return({
+    type: RECEIVE_CON,
+    con
+  })
+  
+};
 
 const receiveCons = (cons) => ({
   type: RECEIVE_CONS,
@@ -34,6 +37,12 @@ export const newCon = (con) => dispatch => (
     .then(con => (dispatch(receiveCon(con))))
 );
 
+
+export const editCon = con => dispatch => {
+  return (
+    ConUtil.editCon(con).then(con => dispatch(receiveCon(con)))
+  )
+}
 export const destroyCon = (con) => dispatch => (
   ConUtil.fetchCon(con)
     .then(con => (dispatch(deleteCon(con.id))))

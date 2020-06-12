@@ -1,0 +1,39 @@
+.profile-container{
+    margin:auto;
+    margin-top: 110px;
+    z-index: 10;
+    width:60%;
+
+}
+
+.username{
+    font-size: 60px;
+    font-family: "Cabin";
+    margin-left: 180px;
+}
+
+.follow-count{
+    display: flex;
+    flex-direction: row;
+    font-family: "Cabin";
+    margin-left:187px;
+
+}
+.profile-info{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.avatar{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    font-size:50px;
+    font-family: "Cabin";
+    background: #e2e2d6;
+    border-radius: 50px;
+    margin-right:80px;
+    margin-top: 20px;
+}

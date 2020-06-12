@@ -9,13 +9,16 @@ class BoardIndex extends React.Component {
 
   componentDidMount() {
     this.props.fetchAllBoards();
+    this.props.fetchAllCons();
   }
 
   filterBoards() {
-    let userId = this.props.userId;
+
+    let userId = this.props.currentUser.id;
+    debugger
     let boards = Object.values(this.props.boards);
-    // debugger
-    return boards.filter(board => board.author_id === userId); 
+    debugger
+    return boards.filter(board => board.user_id === userId); 
 
   }
 
@@ -25,8 +28,8 @@ class BoardIndex extends React.Component {
     if (!this.props.boards) {
       return null;
     }
-
     let userBoards = this.filterBoards();
+    console.log(userBoards)
     const boardIndexItems = userBoards.map(board => {
       return <BoardIndexItem key={board.id} board={ board } boardId={board.id}/>
     });
@@ -39,7 +42,7 @@ class BoardIndex extends React.Component {
         </div>
 
         <div className="boards-container">
-          <ul>
+          <ul className = "board-tab">
             { boardIndexItems }
           </ul>
         </div>

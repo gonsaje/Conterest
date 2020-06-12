@@ -1,0 +1,25 @@
+.following-users {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left:140px;
+    width:80%;
+}
+
+.follow-header{
+    display:flex;
+    justify-content: center;
+    font-size: 30px;
+    font-family: "Cabin";
+    font-weight: 900;
+}
+
+.the-people-u-follow {
+    display:flex;
+    justify-content:space-between;
+    width:20%;
+    margin-top: 20px;
+    font-size:25px;
+    font-family:"Cabin";
+}

@@ -38,14 +38,11 @@
 }
 
 .con-container button{
-  background: none;
   border: none;
-  border-radius: 25px;
-  font-size: 30px;
+  
+  
 }
-.con-container button:hover{
-  background-color: #e2e2d6;
-}
+
 .con-container h3 {
   margin-left: 10px;
   margin-top: 50px;
@@ -65,4 +62,83 @@ width: 50%
 }
 #con-info{
   width: 50%;
+}
+
+.edit-save{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin:auto;
+  margin-top: 50px;
+
+}
+
+.boards-list{
+  margin-left:100px;
+  font-size: 15px;
+}
+
+.save-board{
+  font-size: 12px;
+  color:#fffff0;
+  background-color: #ab4b52;
+  padding:15px;
+  border-top-right-radius: 10px; 
+  border-bottom-right-radius: 10px;
+}
+.save-board:hover{
+  color:#fffff0b2;
+  background-color: #ab4b52ad;
+
+}
+
+.con-title{
+  font-size: 40px;
+}
+
+.con-information{
+  display: flex;
+  width:85%;
+  height: 60%;
+  margin:auto;
+  flex-direction: column;
+  font-family: "Cabin";
+  // justify-content: space-between;
+  margin-top:100px;
+}
+.cons-save-board{
+  margin-top: 50%;
+}
+
+
+.pencil{
+  background: none;
+  border-radius: 25px;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.pencil:hover{
+  background-color: #e2e2d6;
+}
+
+.boards-drop{
+  background: none;
+  background-color:#e2e2d6;
+  border:none;
+  font-size: 11px;
+  padding:15px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.boards-list, option{
+  font-family: "Cabin";
+  -webkit-appearance: none;
+}
+
+option {
+  background:none;
+  
 }

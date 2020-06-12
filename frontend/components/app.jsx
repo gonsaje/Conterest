@@ -13,11 +13,13 @@ import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import Footer from './footer/footer';
 import Links from './footer/links';
 import ProfileContainer from "./profile/profile_container";
+import FollowingConContainer from './cons/following_con_container';
 
 const App = () => (
   <div>
       <ProtectedRoute path="/" component={NavBarContainer} />
       <ProtectedRoute exact path="/feed" component={ConIndexContainer} />  
+      <ProtectedRoute exact path="/following" component={FollowingConContainer}/>
       <ProtectedRoute exact path="/cons/:id" component={ConShowContainer} />  
       <AuthRoute exact path='/'component={GreetingContainer}/>
       <AuthRoute exact path='/login'component={LogInFormContainer}/>
@@ -25,7 +27,6 @@ const App = () => (
       <ProtectedRoute path="/" component={Footer}/>
       <ProtectedRoute path="/" component={Links}/>
       <ProtectedRoute exact path = "/profile/:id" component={ProfileContainer}/>
-      
   </div>
 );
 

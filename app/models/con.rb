@@ -11,7 +11,7 @@
 #  updated_at  :datetime         not null
 #
 class Con < ApplicationRecord
-  validates :id, :title, :author_id, presence: true
+  validates :title, :author_id, presence: true
 
   belongs_to :author,
     foreign_key: :author_id,

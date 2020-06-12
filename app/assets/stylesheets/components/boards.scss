@@ -1,0 +1,61 @@
+.board-container {
+    width: 300px;
+    height: 260px;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.board-cover {
+    width: 300px;
+    height: 200px;
+    align-items: center;
+    border-radius: 5px;
+  
+
+}
+.boards-title, .con-amount {
+    margin-top: 5px;
+    margin-left: 5px;
+    font-family: "Cabin";
+}
+
+.con-amount{
+    font-size: smaller;
+    font-weight: lighter;
+}
+.board-tab {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.board-container:hover{
+    background: #e2e2d6;
+}
+
+.sub-nav{
+    background: none;
+    display: flex;
+    align-items: center;
+}
+
+.board-button {
+    background: none;
+    border: none;
+    font-family: "Cabin";
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.board-button:hover{
+    background: #e2e2d6;
+}
+
+.boards-index{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}

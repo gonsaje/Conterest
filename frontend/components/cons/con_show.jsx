@@ -6,14 +6,14 @@ class ConShow extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      board_id: null
+    
     }
     this.redirect_feed = this.redirect_feed.bind(this);
   }
 
   componentDidMount() {
-    // debugger
-    this.props.fetchCon(this.props.con.id);
+    this.props.fetchCon(this.props.con)
+    this.props.fetchAllBoards();
   }
 
 
@@ -22,17 +22,47 @@ class ConShow extends React.Component {
     this.props.history.goBack();
   }
 
+  getBoardTitle(id) {
+    let board;
+    const boards = Object.values(this.props.boards)
+    for (let i = 0; i < boards.length; i++) {
+      if (boards[i].id === id) {
+        return boards[i].title
+      }
+    }
+  }
 
+  getBoardNames() {
+    const boards = Object.values(this.props.boards).map(board => {
+      return <option key={board.id} value={board.id}>{board.title}</option>
+    });
+    return boards;
+  }
+
+  editButton() {
+    if (this.props.currentUser.id === this.props.con.author_id) {
+      return (
+        <button className="pencil" id="edit" onClick={() => this.props.openModal('editCon', { id: this.props.con.id })}>
+          <i className="fas fa-pencil-alt"></i>
+        </button>
+      )
+    } else {
+      return (
+        <div></div>
+      )
+    }
+  }
+ 
+
+  
   render() {
     // debugger
     if (!this.props.con) {
       return <div className="loader"></div>
     }
 
-    // const boards = Object.values(this.props.boards).map(board => {
-    //   return <option></option>
-    // });
 
+    const username = this.props.currentUser.email.split("@")[0]
     return (
       <>
         <button id="back" onClick={this.redirect_feed}>
@@ -45,17 +75,20 @@ class ConShow extends React.Component {
           </div>
           <div id="con-info">
             <div className="edit-save">
-              <div className="pencil">
-                <i class="fas fa-pencil-alt"></i>
-              </div>
-              <div>
-                <select>
-              
+              {this.editButton()}
+              <div className="boards-list">
+                <select className="boards-drop">
+                  <option>Choose a Board</option>
+                  {this.getBoardNames()}
+
                 </select>
+                <button className="save-board">Save</button>
               </div>
             </div>
-            <h3>{this.props.con.title}</h3>
-            <h3>{this.props.con.id}</h3>
+            <div className = "con-information">
+              <p className="con-title">{this.props.con.title}</p>
+              <p className="cons-save-board">{username} saved to {this.getBoardTitle(this.props.con.board_id)}</p>
+            </div>
           </div>
         </div>
       </>

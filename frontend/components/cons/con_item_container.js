@@ -1,17 +1,14 @@
 import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
 import ConIndexItem from "../cons/con_item";
-// import { editPin, deletePin } from "../../actions/pin_actions";
-// import { openModal } from '../../actions/modal_actions';
+
 
 const mapStateToProps = (state, ownProps) => {
+  const con = state.entities.cons[ownProps.match.params.id];
   
 }
 const mapDispatchToProps = dispatch => {
   return {
-    // editPin: () => dispatch(editPin()),
-    // deletePin: conId => dispatch(deletePin(conId)),
-    // openModal: (type, props) => dispatch(openModal(type, props))
   };
 };
 

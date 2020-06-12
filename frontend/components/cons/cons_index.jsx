@@ -16,7 +16,6 @@ class ConIndex extends React.Component {
     const cons = Object.values(this.props.cons).map(con => {
       return <ConItemContainer key={con.id} con={con} conId={con.id} />
     });
-
     return (
     
       <div className="con-index">

@@ -1,6 +1,8 @@
 class Api::UsersController < ApplicationController
   #fix renders after routes
+
   def create 
+    debugger
 
     @user = User.new(user_params)
     if @user.save 

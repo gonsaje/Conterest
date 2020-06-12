@@ -4,20 +4,17 @@ import { merge } from 'lodash';
 import { RECEIVE_CON } from '../actions/cons_actions';
 
 const boardsReducer = (state = {}, action) => {
-  Object.freeze(state);
-  let newState;
+  Object.freeze(state)
+  let newState = Object.assign({}, state)
+
   switch (action.type) {
-    case RECEIVE_BOARD:
-      return Object.assign({}, state, {[action.board.id]: action.board});
-    case RECEIVE_CON: {
-      return Object.assign({}, state, {[action.board.id]: action.board})
-    }
     case RECEIVE_BOARDS:
       return action.boards;
-    case REMOVE_BOARD:
-      newState = merge({}, state);
-      delete newState[action.boardId]
-      return newState;
+    case RECEIVE_BOARD:
+      return Object.assign({}, { [action.board.id]: action.board });
+    // case REMOVE_BOARD:
+    //   delete newState[action.boardId];
+    //   return newState; 
     default:
       return state;
   }

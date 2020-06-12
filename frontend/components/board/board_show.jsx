@@ -81,10 +81,10 @@ class BoardShow extends React.Component {
     // }
 
     // debugger
-    let boardPins;
-      if (this.state.boardPins) {
-         boardPins = Object.values(this.state.boardPins.pins).map(pin => {
-          return <PinIndexItemContainer key={pin.id} pin={pin} pinId={pin.id} />
+    let boardCons;
+      if (this.state.cons) {
+         cons = Object.values(this.state.cons).map(con => {
+          return <ConIndexItemContainer key={con.id} con={con} conId={con.id} />
         });
       }
    
