@@ -5,6 +5,6 @@ class BoardLink < ApplicationRecord
         class_name: :Board
         
     belongs_to :con,
-        foreign_key: :con_id
+        foreign_key: :con_id,
         class_name: :Con
 end
