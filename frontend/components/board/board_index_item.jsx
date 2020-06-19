@@ -22,25 +22,18 @@ const mapDispatchToProps = dispatch => {
 class BoardIndexItem extends React.Component {
   constructor(props) {
     super(props);
-    this.redirect_pins = this.redirect_pins.bind(this);
-    this.openEdit = this.openEdit.bind(this)
+    this.redirect = this.redirect.bind(this);
     this.filterCons = this.filterCons.bind(this)
   }
 
-  openEdit(e){
-    e.stopPropagation();
-    this.props.editBoard(this.props.board.id)
-  }
-
-  redirect_pins(){
+  redirect(){
     this.props.history.push(`/boards/${this.props.board.id}`)
   }
   
   filterCons(){
     let boardId = this.props.boardId;
-    debugger
     let cons = Object.values(this.props.cons);
-    debugger
+
     return cons.filter(con => con.board_id === boardId); 
 
   }
@@ -51,11 +44,11 @@ class BoardIndexItem extends React.Component {
     }
     let title = this.props.board.title
     let cover = this.filterCons()
-    let photo = ''
+    let photo;
     if(cover.length) photo = cover[0].photo_url
     return (
       <>
-      <div className="board-container" onClick={this.redirect_pins}>
+      <div className="board-container" onClick={this.redirect}>
         <img className="board-cover" src={photo}/>
 
         <div className="boards-title">{title}</div>
@@ -66,9 +59,4 @@ class BoardIndexItem extends React.Component {
   }
 }
 
-export default withRouter(
-  connect(
-    msp,
-    mapDispatchToProps
-  )(BoardIndexItem)
-);
+export default withRouter(connect(msp,mapDispatchToProps)(BoardIndexItem));

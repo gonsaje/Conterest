@@ -61,7 +61,6 @@ class ConShow extends React.Component {
       return <div className="loader"></div>
     }
 
-
     const username = this.props.currentUser.email.split("@")[0]
     return (
       <>

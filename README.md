@@ -110,7 +110,7 @@ class BoardIndex extends React.Component {
   }
 }
 ```
-
+![](./app/assets/images/profile.gif)
 ## Follows
 
 The Follows feature is created by a joins table linking two unique users by the follower's id and followed user's id. A follow is a one-way street. If two users were to follow each other, that would instantiated two instances of the follow feature. 
@@ -129,6 +129,8 @@ class Follow < ApplicationRecord
 end
 ```
 By selecting the following feed button, a user has quick access to the content created by the users they follow.
+
+![](./app/assets/images/following-feed.gif)
 
 ## Future Implmentations
 * Re-Pins (Save to multiple boards)

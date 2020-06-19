@@ -14,6 +14,7 @@ import Footer from './footer/footer';
 import Links from './footer/links';
 import ProfileContainer from "./profile/profile_container";
 import FollowingConContainer from './cons/following_con_container';
+import BoardShowContainer from './board/board_show_container';
 
 const App = () => (
   <div>
@@ -27,6 +28,7 @@ const App = () => (
       <ProtectedRoute path="/" component={Footer}/>
       <ProtectedRoute path="/" component={Links}/>
       <ProtectedRoute exact path = "/profile/:id" component={ProfileContainer}/>
+      <ProtectedRoute exact path ="/boards/:id" component={BoardShowContainer} />
   </div>
 );
 
