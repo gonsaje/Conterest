@@ -29,7 +29,6 @@ class BoardIndex extends React.Component {
       return null;
     }
     let userBoards = this.filterBoards();
-    console.log(userBoards)
     const boardIndexItems = userBoards.map(board => {
       return <BoardIndexItem key={board.id} board={ board } boardId={board.id}/>
     });

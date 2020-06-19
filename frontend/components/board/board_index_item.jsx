@@ -46,19 +46,13 @@ class BoardIndexItem extends React.Component {
   }
  
   render() {
-    // debugger
-    // console.log('BOARD INDEX ITEM COMPONENT: ', this.filterCons())
     if (!this.props.cons) {
       return null;
     }
     let title = this.props.board.title
-debugger
     let cover = this.filterCons()
     let photo = ''
     if(cover.length) photo = cover[0].photo_url
-
-    console.log("COVERRRR ", cover)
-    debugger
     return (
       <>
       <div className="board-container" onClick={this.redirect_pins}>

@@ -17,7 +17,6 @@ class Profile extends React.Component {
   render() {
     const username = this.props.currentUser.email.split("@")[0]
     const propic = username.split("")[0]
-    // console.log(this.props.currentUser.follo)
     const following = this.props.currentUser.followings.length
     const followers = this.props.currentUser.followers.length
     const boards = Object.values(this.props.currentUser.boards).map(board => {
