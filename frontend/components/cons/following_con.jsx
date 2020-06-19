@@ -14,13 +14,13 @@ class FollowingCon extends React.Component {
   
 
     followed(con) {
-    debugger
+
         let followedIds = [];
         for(let i = 0; i < this.props.followings.length;i++) {
             let followedUser = this.props.followings[i];
             followedIds.push(followedUser.id)
         }
-debugger
+
         if (followedIds.includes(con.author_id)){
             return true;
         } 
@@ -39,7 +39,7 @@ debugger
                 return (<ConItemContainer key={con.id} con={con} conId={con.id} /> )
             }
         });
-debugger
+
     return (
         <div className="following-index">
             <div className="following-users">

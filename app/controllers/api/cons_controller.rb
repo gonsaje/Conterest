@@ -1,5 +1,5 @@
 class Api::ConsController < ApplicationController
-# debugger
+
   def create
     @con = Con.new(cons_params)
     @con.author_id = current_user.id
@@ -12,7 +12,7 @@ class Api::ConsController < ApplicationController
   end
 
   def show
-    # debugger
+
     @con = Con.find(params[:id])
     render '/api/cons/show'
   end

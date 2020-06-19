@@ -6,7 +6,6 @@ import { fetchAllCons } from "../../actions/cons_actions";
 const mapStateToProps = (state, ownProps) => {
   let boards = state.session.currentUser.boards
   let currentUser = state.session.currentUser
-  debugger
   return { boards, currentUser }
 };
 

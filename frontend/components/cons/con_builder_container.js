@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { newCon } from '../../actions/con_actions';
+import { newCon } from '../../actions/cons_actions';
 import { fetchUser } from '../../actions/user_actions';
 import ConBuilder from './con_builder';
 

@@ -15,9 +15,9 @@ class BoardIndex extends React.Component {
   filterBoards() {
 
     let userId = this.props.currentUser.id;
-    debugger
+
     let boards = Object.values(this.props.boards);
-    debugger
+
     return boards.filter(board => board.user_id === userId); 
 
   }
